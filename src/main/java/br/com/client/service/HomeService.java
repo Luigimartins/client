@@ -15,6 +15,7 @@ public class HomeService {
 	private String url;
 	
 	public String getResponseProjectWeb() {
+		System.out.println("CONSULTANDO URL:" + url);
 		return restTemplate.getForObject(url, String.class);
 	}
 }
